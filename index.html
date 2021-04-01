@@ -1,15 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="たかだのポートフォリオです">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="imgs/icons/favicon.ico">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>my-portfolio</title>
+<meta charset="UTF-8">
+<meta name="description" content="たかだのポートフォリオです">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="imgs/icons/favicon.ico">
+<link rel="stylesheet" href="./css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&display=swap" rel="stylesheet">
+<title>my-portfolio</title>
 </head>
+<body>
 <div id="app">
+
+<!-- nav -->
+<nav class="gnav">
+<ul class="gnav-list">
+<li class="gnav-item"><a href="#">top</a></li>
+<li class="gnav-item"><a href="#">profile</a></li>
+<li class="gnav-item"><a href="#">works</a></li>
+<li class="gnav-item"><a href="#">skills</a></li>
+<li class="gnav-item"><a href="#">contact</a></li>
+</ul>
+</nav><!-- /nav -->
+
+<!-- main -->
+<main class="main">
+<div class="main-inner">
+
+<!-- content -->
+<div class="content">
+
+<!-- ch -->
+<header class="ch">
+<div class="ch-inner">
+<h1 class="ch-tit">Takada's portfolio</h1>
+</div>
+</header>
+<!-- /ch -->
+
+<!-- sec -->
+<section class="sec">
+<h2 class="sec-tit">profile</h2>
+<dl class="sec-def">
+<dt class="sec-dtit">
+<figure class="sec-pic"><img src="imgs/icons/nigaoe.jpg" alt="たかだの似顔絵"></figure>
+</dt>
+<dd class="sec-data">
+<ul class="sec-list">
+<li class="sec-item">自己紹介</li>
+</ul>
+</dd>
+</dl>
+</section>
+<!-- /sec -->
+
+<!-- sec -->
+<section class="sec">
+<h2 class="sec-tit">works</h2>
+<ul class="sec-list">
+<li class="sec-item"><a href="#"><img src="imgs/works/schedule-app.png" alt="スケジュールアプリの写真"></a></li>
+<li class="sec-item"><a href="#"><img src="imgs/works/schedule-app.png" alt="このポートフォリオサイトの写真"></a></li>
+</ul>
+</section>
+<!-- /sec -->
+
+<!-- sec -->
+<section class="sec">
+<h2 class="sec-tit">skills</h2>
+<ul class="sec-list">
+<li class="sec-item"><img src="imgs/skills/vue.png" alt="Vue.jsのアイコン"></li>
+<li class="sec-item"><img src="imgs/skills/javascript.png" alt="JavaScriptのアイコン"></li>
+<li class="sec-item"><img src="imgs/skills/html-5.png" alt="HTML5のアイコン"></li>
+<li class="sec-item"><img src="imgs/skills/css-3.png" alt="CSS3のアイコン"></li>
+<li class="sec-item"><img src="imgs/skills/node-sass.png" alt="Sassのアイコン"></li>
+<li class="sec-item"><img src="imgs/skills/git-icon.png" alt="Gitのアイコン"></li>
+<li class="sec-item"><img src="imgs/skills/github.png" alt="GitHubのアイコン"></li>
+</ul>
+</section>
+<!-- /sec -->
+
+<!-- sec -->
+<section class="sec">
+<h2 class="sec-tit">contact</h2>
+<ul class="sec-list">
+  <li class="sec-item"><a href="#"><img src="imgs/contact_icons/Twitter.png" alt="Twitterのアイコン"></a></li>
+<li class="sec-item"><a href="#"><img src="imgs/contact_icons/github.png" alt="Githubのアイコン"></a></li>
+<li class="sec-item"><a href="#"><img src="imgs/contact_icons/hatena_blog.png" alt="はてなブログのアイコン"></a></li>
+<li class="sec-item"><a href="#"><img src="imgs/contact_icons/wantedly.png" alt="Wantedlyのアイコン"></a></li>
+</ul>
+</section>
+<!-- /sec -->
+
+</div><!-- /content -->
+
+</div>
+</main><!-- /main -->
+
+<!-- footer -->
+<footer class="footer">
+<div class="footer-inner">
+<p class="footer-txt">© 2021 Takada</p>
+</div>
+</footer><!-- /footer -->
+
 </div>    
+</body>
 </html>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
