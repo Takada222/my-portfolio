@@ -18,11 +18,11 @@
 <!-- gnav -->
 <nav class="gnav">
 <ul class="gnav-list">
-<li class="gnav-item active"><a href="#ch">top</a></li>
-<li class="gnav-item"><a href="#prof">profile</a></li>
-<li class="gnav-item"><a href="#works">works</a></li>
-<li class="gnav-item"><a href="#skills">skills</a></li>
-<li class="gnav-item"><a href="#contact">contact</a></li>
+<li class="gnav-item" :class="{ 'active': scrollY < 750 }"><a href="#ch">top</a></li>
+<li class="gnav-item" :class="{ 'active': scrollY > 750 && scrollY < 1300 }"><a href="#prof">profile</a></li>
+<li class="gnav-item" :class="{ 'active': scrollY > 1300 && scrollY < 2550 }"><a href="#works">works</a></li>
+<li class="gnav-item" :class="{ 'active': scrollY > 2550 && scrollY < 2850 }"><a href="#skills">skills</a></li>
+<li class="gnav-item" :class="{ 'active': scrollY > 2850 }"><a href="#contact">contact</a></li>
 </ul>
 </nav><!-- /gnav -->
 
@@ -129,6 +129,16 @@
 <script>
   new Vue({
     el: `#app`,
-    data: {}
+    data: {
+      scrollY: 0
+    },
+    mounted() {
+      window.addEventListener('scroll', this.handleScroll)
+    },
+    methods: {
+      handleScroll() {
+        this.scrollY = window.scrollY
+      }
+    }
   })
 </script>
