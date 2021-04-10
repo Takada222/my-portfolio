@@ -1,0 +1,309 @@
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+html {
+  font-size: 10px; }
+
+body {
+  color: #000;
+  text-align: center; }
+
+a {
+  text-decoration: none; }
+
+img {
+  height: 100px; }
+
+.gnav {
+  width: 150px;
+  z-index: 1;
+  position: fixed;
+  top: 150px;
+  right: 100px;
+  text-align: right; }
+  .gnav-item {
+    line-height: 30px;
+    width: 100%;
+    font-size: 2rem;
+    padding: 3px 0;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    border-right: #777 solid 1px; }
+    .gnav-item a {
+      display: inline-block;
+      width: 100%;
+      letter-spacing: 7px;
+      color: #555;
+      transition: .3s; }
+      .gnav-item a:hover {
+        color: #ccc;
+        transition: .3s; }
+  .gnav-btn {
+    z-index: 1;
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    color: #555;
+    background-color: #fff;
+    border: 3px solid #777;
+    border-radius: 100px; }
+    .gnav-btn a {
+      display: block;
+      border-radius: 100px;
+      transition: .2s; }
+      .gnav-btn a:hover {
+        color: #ccc;
+        background-color: #777;
+        transition: .2s; }
+
+.active {
+  color: black;
+  position: relative; }
+  .active a {
+    color: #c33; }
+  .active::after {
+    content: "・";
+    position: absolute;
+    top: 7px; }
+
+@media screen and (min-width: 1440px) {
+  .gnav-btn {
+    display: none; } }
+@media screen and (max-width: 1439px) {
+  .gnav-list {
+    display: none; } }
+.main {
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 100px; }
+
+.ch {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../imgs/bg/himawari.jpg);
+  background-size: cover; }
+  .ch::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: .6;
+    display: block; }
+  .ch-inner {
+    width: 100%;
+    height: 100vh;
+    text-align-last: left; }
+  .ch-tit {
+    color: #383;
+    font-family: 'Josefin Slab', serif;
+    display: inline-block;
+    margin: 10% 0 0 10%;
+    padding: 10px 0 10px 15px;
+    border-left: 4px solid #383;
+    font-size: 9rem;
+    letter-spacing: 13px; }
+
+.sec {
+  width: 100%;
+  padding-top: 200px; }
+  .sec-tit {
+    color: #383;
+    font-family: 'Josefin Slab', serif;
+    padding-bottom: 30px;
+    margin: 0 35%;
+    width: 30%;
+    font-size: 6rem;
+    border-bottom: 2px solid #cdc; }
+  .sec-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 100px 10% 30px; }
+  .sec-txt {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 35px;
+    font-size: 1.6rem;
+    color: #666; }
+  .sec._prof {
+    box-shadow: 0 -20px 10px #fff; }
+    .sec._prof .sec-wrap {
+      display: flex;
+      width: 60%;
+      margin: 50px 20% 0; }
+      .sec._prof .sec-wrap img {
+        width: 20%;
+        height: 100%;
+        margin: 3% 10% 0 0;
+        border-radius: 200px;
+        box-shadow: 0 0 10px #000; }
+    .sec._prof .sec-txt {
+      margin-bottom: 10px;
+      font-size: 1.6rem; }
+      .sec._prof .sec-txt a {
+        border-bottom: 2px solid #005;
+        margin: 0 10px; }
+        .sec._prof .sec-txt a:hover {
+          color: #ccc;
+          border-bottom: 2px solid #ccc; }
+    .sec._prof .sec-box {
+      width: 60%;
+      text-align: left;
+      margin-top: 30px; }
+  .sec._works .sec-inner {
+    display: flex;
+    width: 80%;
+    margin: 0 10%; }
+    .sec._works .sec-inner a {
+      display: inline-block; }
+  .sec._works .sec-wrap {
+    width: 40%;
+    margin: 100px 5% 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #000;
+    transition: .3s; }
+    .sec._works .sec-wrap:hover {
+      opacity: .4;
+      transition: .3s; }
+  .sec._works ._large {
+    width: 80%;
+    font-size: 3rem;
+    padding: 30px 0 20px;
+    margin: 10px 10% 40px; }
+  .sec._works img {
+    height: 200px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-bottom: 10%; }
+  .sec._works .sec-box {
+    width: 80%;
+    margin: 0 10%;
+    text-align: left; }
+    .sec._works .sec-box ._small {
+      width: 80%;
+      font-size: 2.5rem;
+      padding: 0 0 10px;
+      margin: 0 0 10px; }
+    .sec._works .sec-box .sec-txt {
+      padding-bottom: 30px;
+      font-size: 1.6rem; }
+  .sec._skills .sec-item {
+    width: 8%;
+    margin: 0 1%; }
+  .sec._contact .sec-item {
+    margin: 0 10px; }
+    .sec._contact .sec-item img {
+      width: 40px;
+      height: 40px; }
+    .sec._contact .sec-item:hover {
+      opacity: .5;
+      position: relative; }
+
+.footer {
+  width: 100%;
+  height: 5vh;
+  background-color: #333;
+  font-size: 1.3rem; }
+  .footer-inner {
+    padding-top: 10px; }
+  .footer-txt {
+    color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

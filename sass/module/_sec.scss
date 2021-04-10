@@ -1,0 +1,140 @@
+@import "../mixin/title.scss";
+
+.sec {
+  $this: &;
+  width: 100%;
+  padding-top: 200px;
+  
+  // .sec-tit
+  &-tit {
+    @include _title
+  }
+
+  // .sec-list
+  &-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 100px 10% 30px;
+  }
+
+  
+  &-txt {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 35px;
+    font-size: 1.6rem;
+    color: #666;
+  }
+
+  // profile
+  &._prof {
+    box-shadow: 0 -20px 10px #fff;
+    #{$this}-wrap{
+      display: flex;
+      width: 60%;
+      margin: 50px 20% 0; 
+      img {
+        width: 20%;
+        height: 100%;
+        margin: 3% 10% 0 0;
+        border-radius: 200px;
+        box-shadow: 0 0 10px #000;
+      }
+    }
+    #{$this}-txt {
+      margin-bottom: 10px;
+      font-size: 1.6rem;
+      a {
+        border-bottom: 2px solid #005;
+        margin: 0 10px;
+        &:hover {
+          color: #ccc;
+          border-bottom: 2px solid #ccc;
+        }
+      }
+    }
+
+    #{$this}-box {
+      width: 60%;
+      text-align: left;
+      margin-top: 30px;
+    }
+  }
+
+  // works
+  &._works {
+    #{$this}-inner {
+      display: flex;
+      width: 80%;
+      margin: 0 10%;
+      a {
+        display: inline-block;
+      }
+    }
+    #{$this}-wrap {
+      width: 40%;
+      margin: 100px 5% 30px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 0 5px #000;
+      transition: .3s;
+      &:hover {
+        opacity: .4;
+        transition: .3s;
+      }
+    }
+    ._large {
+      width: 80%;
+      font-size: 3rem;
+      padding: 30px 0 20px;
+      margin: 10px 10% 40px;
+    }
+    img {
+      height: 200px;
+      border: 1px solid #000;
+      border-radius: 5px;
+      margin-bottom: 10%;
+    }
+    #{$this}-box {
+      width: 80%;
+      margin: 0 10%;
+      text-align: left;
+      ._small {
+        width: 80%;
+        font-size: 2.5rem;
+        padding: 0 0 10px;
+        margin: 0 0 10px;
+      }
+      .sec-txt {
+        padding-bottom: 30px;
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  // skills
+  &._skills {
+    #{$this}-item {
+      width: 8%;
+      margin: 0 1%;
+    }
+  }
+
+  // contact
+  &._contact {
+    #{$this}-item {
+      margin: 0 10px;
+      img {
+        width: 40px;
+        height: 40px;
+      }
+      &:hover {
+        opacity: .5;
+        position: relative;
+      }
+    }
+  }
+
+}

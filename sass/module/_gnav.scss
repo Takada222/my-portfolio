@@ -1,0 +1,79 @@
+.gnav {
+  width: 150px;
+  z-index: 1;
+  position: fixed;
+  top: 150px;
+  right: 100px;
+  text-align: right;
+  &-item {
+    line-height: 30px;
+    width: 100%;
+    font-size: 2rem;
+    padding: 3px 0;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    border-right: #777 solid 1px;
+    a {
+      display: inline-block;
+      width: 100%;
+      letter-spacing: 7px;
+      color: #555;
+      transition: .3s;
+      &:hover {
+        color: #ccc;
+        transition: .3s;
+      }
+    }
+  }
+  &-btn {
+    z-index: 1;
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    color: #555;
+    background-color: #fff;
+    border: 3px solid #777;
+    border-radius: 100px;
+    a {
+      display: block;
+      border-radius: 100px;
+      transition: .2s;
+      &:hover {
+        color: #ccc;
+        background-color: #777;
+        transition: .2s;
+      }
+    }
+  }
+}
+
+.active {
+  color: black;
+  position: relative;
+  a {
+    color: #c33;
+  }
+  &::after {
+    content: "・";
+    position: absolute;
+    top: 7px;
+  }
+}
+
+@media screen and (min-width: 1440px) { 
+  .gnav-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .gnav-list {
+    display: none;
+  }
+}

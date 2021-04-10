@@ -1,0 +1,6 @@
+@import "../settings/config";
+
+@mixin _title-font {
+  color: $title-color;
+  font-family: 'Josefin Slab', serif;
+}

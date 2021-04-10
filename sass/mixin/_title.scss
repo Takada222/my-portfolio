@@ -1,0 +1,10 @@
+@import "../mixin/title-font";
+
+@mixin _title {
+  @include _title-font;
+  padding-bottom: 30px;
+  margin: 0 35%;
+  width: 30%;
+  font-size: 6rem;
+  border-bottom: 2px solid #cdc;
+}
