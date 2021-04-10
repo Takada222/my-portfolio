@@ -4,7 +4,6 @@
 .ch {
   width: 100%;
   height: 100vh;
-  background-image: url(../imgs/bg/himawari.jpg);
   background-size: cover;
   text-align: left;
   &::after {
@@ -21,10 +20,45 @@
   &-tit {
     @include _title-font;
     display: inline-block;
-    margin: 10% 0 0 10%;
-    padding: 10px 0 10px 15px;
-    border-left: 4px solid $title-color;
-    font-size: 9rem;
-    letter-spacing: 13px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .ch {
+    background-image: url(../imgs/bg/himawari.jpg);
+    &-tit {
+      margin: 10% 0 0 10%;
+      padding: 10px 0 10px 15px;
+      border-left: 4px solid $title-color;
+      font-size: 9rem;
+      letter-spacing: 13px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .ch {
+    background-image: url(../imgs/bg/himawari.jpg);
+    &-tit {
+      margin: 30vh 0 0 15%;
+      padding: 10px 0 10px 15px;
+      border-left: 6px solid $title-color;
+      font-size: 15rem;
+      letter-spacing: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .ch {
+    background-image: url(../imgs/bg/momiji.jpg);
+    &-tit {
+      margin: 40vh 0 0 15%;
+      padding: 10px 0 10px 15px;
+      border-left: 6px solid #fff;
+      font-size: 10rem;
+      letter-spacing: 2rem;
+      color: #fff;
+    }
   }
 }

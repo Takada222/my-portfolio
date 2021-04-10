@@ -105,7 +105,7 @@ img {
   z-index: 1;
   position: fixed;
   top: 20%;
-  right: 10%;
+  right: 5%;
   text-align: right; }
   .gnav-item {
     line-height: 30px;
@@ -129,9 +129,9 @@ img {
     position: fixed;
     bottom: 10%;
     right: 10%;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
     font-size: 2rem;
     font-weight: normal;
     text-align: center;
@@ -158,10 +158,10 @@ img {
     position: absolute;
     top: 7px; }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1025px) {
   .gnav-btn {
     display: none; } }
-@media screen and (max-width: 1439px) {
+@media screen and (max-width: 1024px) {
   .gnav-list {
     display: none; } }
 .main {
@@ -172,7 +172,6 @@ img {
 .ch {
   width: 100%;
   height: 100vh;
-  background-image: url(../imgs/bg/himawari.jpg);
   background-size: cover;
   text-align: left; }
   .ch::after {
@@ -188,13 +187,36 @@ img {
   .ch-tit {
     color: #383;
     font-family: 'Josefin Slab', serif;
-    display: inline-block;
-    margin: 10% 0 0 10%;
-    padding: 10px 0 10px 15px;
-    border-left: 4px solid #383;
-    font-size: 9rem;
-    letter-spacing: 13px; }
+    display: inline-block; }
 
+@media screen and (min-width: 1440px) {
+  .ch {
+    background-image: url(../imgs/bg/himawari.jpg); }
+    .ch-tit {
+      margin: 10% 0 0 10%;
+      padding: 10px 0 10px 15px;
+      border-left: 4px solid #383;
+      font-size: 9rem;
+      letter-spacing: 13px; } }
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .ch {
+    background-image: url(../imgs/bg/himawari.jpg); }
+    .ch-tit {
+      margin: 30vh 0 0 15%;
+      padding: 10px 0 10px 15px;
+      border-left: 6px solid #383;
+      font-size: 15rem;
+      letter-spacing: 2rem; } }
+@media screen and (max-width: 1023px) {
+  .ch {
+    background-image: url(../imgs/bg/momiji.jpg); }
+    .ch-tit {
+      margin: 40vh 0 0 15%;
+      padding: 10px 0 10px 15px;
+      border-left: 6px solid #fff;
+      font-size: 10rem;
+      letter-spacing: 2rem;
+      color: #fff; } }
 .sec {
   width: 100%;
   padding-top: 200px; }
