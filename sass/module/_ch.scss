@@ -6,6 +6,7 @@
   height: 100vh;
   background-image: url(../imgs/bg/himawari.jpg);
   background-size: cover;
+  text-align: left;
   &::after {
     content: '';
     position: absolute;
@@ -16,11 +17,6 @@
     background-color: #fff;
     opacity: .6;
     display: block;
-  }
-  &-inner {
-    width: 100%;
-    height: 100vh;
-    text-align-last: left;
   }
   &-tit {
     @include _title-font;

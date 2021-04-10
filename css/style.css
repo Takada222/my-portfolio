@@ -173,7 +173,8 @@ img {
   width: 100%;
   height: 100vh;
   background-image: url(../imgs/bg/himawari.jpg);
-  background-size: cover; }
+  background-size: cover;
+  text-align: left; }
   .ch::after {
     content: '';
     position: absolute;
@@ -184,10 +185,6 @@ img {
     background-color: #fff;
     opacity: .6;
     display: block; }
-  .ch-inner {
-    width: 100%;
-    height: 100vh;
-    text-align-last: left; }
   .ch-tit {
     color: #383;
     font-family: 'Josefin Slab', serif;
