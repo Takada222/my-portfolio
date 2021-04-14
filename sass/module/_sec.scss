@@ -4,7 +4,6 @@
   $this: &;
   width: 100%;
   padding-top: 200px;
-  
   // .sec-tit
   &-tit {
     @include _title
@@ -14,10 +13,10 @@
   &-list {
     list-style: none;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     width: 80%;
-    margin: 100px 10% 30px;
+    margin: 30px 10%;
   }
 
   
@@ -30,7 +29,6 @@
 
   // profile
   &._prof {
-    box-shadow: 0 -20px 10px #fff;
     #{$this}-wrap{
       display: flex;
       width: 60%;
@@ -58,7 +56,7 @@
 
     #{$this}-box {
       width: 60%;
-      text-align: left;
+      text-align: center;
       margin-top: 30px;
     }
   }
@@ -74,8 +72,8 @@
       }
     }
     #{$this}-wrap {
-      width: 40%;
-      margin: 100px 5% 30px;
+      width: 45%;
+      margin: 100px 2.5% 30px;
       text-align: center;
       border-radius: 10px;
       box-shadow: 0 0 5px #000;
@@ -92,7 +90,8 @@
       margin: 10px 10% 40px;
     }
     img {
-      height: 200px;
+      height: 90%;
+      width: 80%;
       border: 1px solid #000;
       border-radius: 5px;
       margin-bottom: 10%;
@@ -117,8 +116,12 @@
   // skills
   &._skills {
     #{$this}-item {
-      width: 8%;
-      margin: 0 1%;
+      width: 100px;
+      height: 120px;
+      img {
+        width: 80%;
+        margin: 0 auto;
+      }
     }
   }
 
@@ -137,4 +140,83 @@
     }
   }
 
+}
+
+@media screen and (max-width: 1024px) {
+  .sec {
+    overflow: hidden;
+    position: relative;
+    $this: &;
+    &._prof {
+      #{$this}-wrap {
+        display: block;
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+    &._works {
+      #{$this}-inner {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+      }
+      #{$this}-wrap {
+        width: 90%;
+        margin: 30px auto;
+      }
+    }
+    &._skills {
+      #{$this}-list {
+        width: 100%;
+        margin: 30px 0 0;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .sec {
+    $this: &;
+    width: 600px;
+    margin: 0 auto;
+    &-inner {
+      width: 100%;
+    }
+    &._prof {
+      #{$this}-wrap {
+        width: 90%;
+        margin: 5%;
+        img {
+          width: 30%;
+          margin: 0 auto;
+        }
+      }
+      #{$this}-box {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .sec {
+    $this: &;
+    width: 100%;
+    &._prof {
+      #{$this}-wrap {
+        width: 90%;
+        margin: 5%;
+      }
+      #{$this}-box {
+        width: 100%;
+      }
+    }
+    &-txt {
+      line-height: 25px;
+    }
+  }
 }
